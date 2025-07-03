@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Card Generator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section id="home-page">
+  <div class="overlay">
+    <h1>Create Your Digital Business Card</h1>
+    <p>Elegant. Customizable. Shareable.</p>
+    <button class="btn-get-started" onclick="document.getElementById('main-section').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+  </div>
+</section>
+
+<section id="main-section" class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card form-card p-4">
+        <h2 class="text-center mb-4">Card Information</h2>
+        <form>
+          <input type="text" id="name" class="form-control my-2" placeholder="Full Name" oninput="updatePreview()">
+          <input type="text" id="title" class="form-control my-2" placeholder="Job Title" oninput="updatePreview()">
+          <input type="text" id="company" class="form-control my-2" placeholder="Company Name" oninput="updatePreview()">
+          <input type="text" id="slogan" class="form-control my-2" placeholder="Short Bio / Slogan" oninput="updatePreview()">
+          <input type="text" id="phone" class="form-control my-2" placeholder="Phone" oninput="updatePreview()">
+          <input type="email" id="email" class="form-control my-2" placeholder="Email" oninput="updatePreview()">
+          <input type="text" id="website" class="form-control my-2" placeholder="Website" oninput="updatePreview()">
+          <input type="text" id="address" class="form-control my-2" placeholder="Address" oninput="updatePreview()">
+          <input type="file" id="profile-picture" class="form-control my-2" accept="image/*" onchange="loadImage(event)">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-8">
+      <div id="card-preview" class="template shadow-lg"></div>
+      <button class="btn btn-success mt-3" onclick="downloadPNG()">Download Card as PNG</button>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+<script src="https://unpkg.com/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

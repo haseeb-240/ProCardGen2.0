@@ -1,0 +1,112 @@
+body {
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Home Page */
+#home-page {
+    height: 100vh;
+    background: linear-gradient(135deg, #4CAF50 0%, #81C784 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+#home-page .overlay {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+#home-page h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#home-page p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-get-started {
+    font-size: 18px;
+    padding: 12px 28px;
+    background-color: #ffffff;
+    color: #4CAF50;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-get-started:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+}
+
+/* Form Card */
+.form-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+/* Business Card Preview */
+.template {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    transition: all 0.3s ease;
+}
+
+.template img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+    float: left;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.template h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+.template h3 {
+    font-size: 18px;
+    color: #2196F3;
+    margin: 5px 0;
+}
+
+.template p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+/* QR Code Styling */
+.qr-code img {
+    width: 130px;
+    height: 130px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
